@@ -1,13 +1,512 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat&family=Roboto&family=Source+Serif+4:opsz@8..60&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter" sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar-color {
+  width: 10%;
+  height: 1748px;
+  background-color: rgb(46, 37, 37);
+}
+.main-content-wrapper {
+  width: 90%;
+  height: 100%;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  flex-shrink: 0;
+  background: radial-gradient(
+    70% 70% at 50% 70%,
+    rgba(184, 125, 88, 0.8) 0%,
+    rgba(184, 125, 88, 0) 100%
+  );
+}
+
+.header-upper-center {
+  display: flex;
+  width: 100%;
+  height: 380px;
+  padding-bottom: 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-shrink: 0;
+  /* z-index: 1; */
+}
+
+.header-upper-description {
+  width: 50%;
+}
+
+.header-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  border-radius: 25px;
+  flex-shrink: 0;
+  border-radius: 28px;
+  background: lightgray 50% / cover no-repeat;
+  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.header-img {
+  width: 98%;
+
+  border-radius: 35px;
+}
+.header-description-btn {
+  color: white;
+  background-color: darkolivegreen;
+  border-radius: 10px;
+  border: none;
+  padding: 15px 15px;
+}
+
+.header-description-span {
+  color: #3a5f56;
+  font-family: Source Serif Pro;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 57.6px; /* 120% */
+}
+
+.header-description-p {
+  color: #292c32;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22.4px; /* 140% */
+  margin: 5% 0;
+}
+
+.nav-img {
+  width: 30px;
+}
+
+.nav-header {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(235, 197, 157);
+}
+
+.contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 35%;
+  width: 400px;
+  height: 50px;
+  color: #292c32;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22.4px; /* 140% */
+}
+
+.contacts-phone,
+.contacts-email {
+  display: block;
+  font-weight: 600;
+  margin-right: auto;
+}
+
+.nav-icons-div {
+  display: flex;
+  justify-content: center;
+  gap: 3%;
+}
+
+.content-experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3%;
+}
+
+.experience-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+h4 {
+  color: #3a5f56;
+  text-align: center;
+  font-family: Source Serif Pro;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38.4px; /* 120% */
+}
+.experience-jobs {
+  width: 800px;
+  height: 480px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.sidebars {
+  width: 379px;
+  height: 200px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: #f4f3f0;
+  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.03);
+}
+
+.sidebar-job-company {
+  color: #3a5f56;
+  font-family: Source Serif Pro;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28.8px; /* 120% */
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.sidebar-job-title {
+  color: #3a5f56;
+  font-family: Source Serif Pro;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28.8px; /* 120% */
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.sidebar-job-duties {
+  color: #292c32;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22.4px; /* 140% */
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.study {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  background-color: rgb(220, 220, 169);
+  padding-bottom: 30px;
+  padding-left: 32px;
+}
+.sidebars-study {
+  width: 379px;
+  height: 120px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: #f4f3f0;
+  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.03);
+}
+.university-name {
+  color: #3a5f56;
+  font-family: Source Serif Pro;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28.8px; /* 120% */
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+.faculty {
+  color: #3a5f56;
+  font-family: Source Serif Pro;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28.8px; /* 120% */
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+
+  background-color: rgb(102, 86, 45);
+  color: #fff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22.4px; /* 140% */
+  padding: 4% 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.skills-p {
+  color: #221811;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.6px; /* 140% */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.sidebar {
+  height: 100%;
+  width: 250px;
+  /* position: fixed; */
+  background-color: #111;
+  padding-top: 20px;
+}
+
+.sidebar a {
+  padding: 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #555;
+}
+
+.content {
+  /* margin-left: 250px; */
+  padding: 16px;
+  background-color: rgb(194, 167, 80);
+}
+
+.wrapper-sidebar-and-main {
+  display: flex;
+}
+
+.app-left {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px; /* Ширина боковой панели */
+  background-color: #111;
+  color: white;
+  padding: 20px;
+  height: 98%;
+}
+
+.main-cont {
+  flex-grow: 1;
+  padding: 0px;
+  padding-bottom: 0px;
+}
+/* Адаптивная верстка для планшета */
+@media all and (max-width: 768px) {
+  .header-description-span {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .contacts {
+    margin-left: 20%;
+  }
+
+  h4 {
+    font-size: 28px;
+    line-height: 30px; /* 120% */
+  }
+  .experience-jobs {
+    width: 510px;
+    height: 410px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+  .sidebars {
+    width: 250px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar-job-company {
+    font-size: 16px;
+
+    line-height: 20px; /* 120% */
+  }
+
+  .sidebar-job-title {
+    font-size: 14px;
+
+    line-height: 18px; /* 120% */
+  }
+
+  .sidebar-job-duties {
+    font-size: 12px;
+
+    line-height: 14px; /* 140% */
+  }
+
+  .sidebars-study {
+    width: 320px;
+    height: 110px;
+  }
+
+  .university-name {
+    font-size: 18px;
+
+    line-height: 20px; /* 120% */
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+
+  .faculty {
+    font-size: 16px;
+    line-height: 18px; /* 120% */
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+}
+
+/* Адаптивная верстка для телефона  */
+
+@media all and (max-width: 375px) {
+  .header-description-span {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .sidebar-color {
+    display: none;
+  }
+
+  .container {
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header {
+    width: 425px;
+  }
+
+  .header-description-p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .header-upper-description {
+    align-items: center;
+    padding-left: 4px;
+  }
+
+  .contacts {
+    margin-left: 8%;
+  }
+
+  h4 {
+    font-size: 22px;
+    line-height: 24px; /* 120% */
+  }
+  .experience-jobs {
+    width: 430px;
+    height: 410px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+  .sidebars {
+    width: 190px;
+    height: 120px;
+  }
+
+  .sidebar-job-company {
+    font-size: 16px;
+
+    line-height: 20px; /* 120% */
+  }
+
+  .sidebar-job-title {
+    font-size: 14px;
+
+    line-height: 18px; /* 120% */
+  }
+
+  .sidebar-job-duties {
+    font-size: 12px;
+
+    line-height: 14px; /* 140% */
+  }
+
+  .sidebars-study {
+    width: 320px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 20px;
+  }
+
+  .university-name {
+    font-size: 16px;
+
+    line-height: 16px; /* 120% */
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+
+  .faculty {
+    font-size: 16px;
+    line-height: 18px; /* 120% */
+    margin-top: 5px;
+    margin-left: 5px;
+  }
 }
