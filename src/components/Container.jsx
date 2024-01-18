@@ -10,7 +10,7 @@ const Container = () => {
             <h4>Experience</h4>
           </div>
           <div className="experience-jobs">
-            <sidebar className="sidebars" data-aos="fade-right">
+            <div className="sidebars" data-aos="fade-right">
               <p className="sidebar-job-company">Emplosoft Inc</p>
               <p className="sidebar-job-title">
                 Front-End Developer 02/2021 - 05/2021 Seattle, USA
@@ -20,16 +20,16 @@ const Container = () => {
                 Bootstrap, React and JavaScript. <br />- Developed and
                 implemented highly responsive components using React and Redux.
               </p>
-            </sidebar>
+            </div>
 
-            <sidebar className="sidebars" data-aos="fade-left">
+            <div className="sidebars" data-aos="fade-left">
               <p className="sidebar-job-company">Skyeng</p>
               <p className="sidebar-job-title">Teacher of English language</p>
               <p className="sidebar-job-duties">
                 - Conducted lessons for adults <br />- Checked homeworks
               </p>
-            </sidebar>
-            <sidebar className="sidebars" data-aos="fade-right">
+            </div>
+            <div className="sidebars" data-aos="fade-right">
               <p className="sidebar-job-company">Falcon DGCA LLC</p>
               <p className="sidebar-job-title">General Manager</p>
               <p className="sidebar-job-duties">
@@ -37,8 +37,8 @@ const Container = () => {
                 - Monitored adherence to working schedule <br />- Met with
                 customers
               </p>
-            </sidebar>
-            <sidebar className="sidebars jobs-sidebar" data-aos="fade-left">
+            </div>
+            <div className="sidebars jobs-sidebar" data-aos="fade-left">
               <p className="sidebar-job-company">
                 Xanadu Casino at Hyatt Regency Bishkek LLC
               </p>
@@ -48,7 +48,7 @@ const Container = () => {
                 - Administering pay, benefits, and leave <br />- Enforcing
                 company policies and practices
               </p>
-            </sidebar>
+            </div>
           </div>
 
           <div className="study">

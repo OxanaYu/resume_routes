@@ -1,13 +1,14 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 
 const Sidebar = () => {
   return (
     <div>
-      <div class="sidebar">
-        <a href="#home">Home</a>
-        <a href="#services">Stack</a>
-        <a href="#about">Additional skills</a>
-        <a href="#contact">Contacts</a>
+      <div className="sidebar">
+        <NavLink to="/">Home</NavLink>
+        {/* <NavLink to="/about">About</NavLink> */}
+        <NavLink to="/experience">Experience</NavLink>
+        <NavLink to="/skills"> Skills</NavLink>
       </div>
     </div>
   );
